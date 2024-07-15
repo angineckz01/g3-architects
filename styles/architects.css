@@ -19,6 +19,17 @@
 .dark3{
     color: #727272;
 }
+.orange{
+    color: #FF900E;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.section-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
 /* primary bg */
 .primary-bg{
     background-color: rgba(255, 144, 14, 0.1);
@@ -31,6 +42,16 @@
     font-weight: 600;
     border-radius: 8px;
     border: none;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main> section{
+    margin-top: 130px;
+}
+.teams{
+    align-items: center;
 }
 /* header styles */
 
@@ -46,13 +67,12 @@
     max-width: 1440px;
     margin: 0 auto;
 }
-.nav-items{
+/* .nav-items{
 
-}
+} */
 .nav-list{
     list-style: none;
-    margin-right: 30px;
-    
+    margin-right: 30px; 
 }
 .nav-link{
     text-decoration: none;
@@ -71,9 +91,44 @@
 .banner-image{
     width: 100%;
 }
+/* team and feature related styles */
+.teams{
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.team-feature-container{
+    margin-left: 80px;
+    max-width: 530px;
+}
+.Quick-list{
+    font-weight: 600;
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-items{
+    .navbar,
+    .nav-items, 
+    .teams{
         flex-direction: column;
     }
+    .teams-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* has given this code in module becoz of .team-feature-container vulbosoto margin-left:130px disilo(deyar chilo 80px)----tai eta extra kora lagse ,ami tkn kheyal korechilam tai amar lageni ----comment kore rakcki*/
+    /* .team-feature-container{
+        margin-left: 20px;
+    } */
 }
+/* for medium size device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .team-feature-container{
+        margin: 50px auto;
+    }
+}
+
