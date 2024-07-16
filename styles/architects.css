@@ -108,6 +108,28 @@ main> section{
 .Quick-list{
     font-weight: 600;
 }
+/* features style section begins here*/
+.features{
+    gap: 8.75rem;
+}
+#section-heading-sign{
+    border-left: 5px solid #FF900E;
+}
+.section-title{
+    padding-left: 1.27rem;
+}
+.section-details>.section-heading{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.section{
+    padding: 1.88rem;
+    margin-top: 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+
+}
 /* some facts section starts here */
 .facts-container{
     display: grid;
