@@ -112,6 +112,17 @@ main> section{
 .features{
     gap: 8.75rem;
 }
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.56rem;
+    font-weight: 500;
+    margin-left: -5.75rem;
+    margin-top: -7.69rem;
+}
+#experience-year{
+    font-size: 4.06rem;
+    font-weight: 700;
+}
 #section-heading-sign{
     border-left: 5px solid #FF900E;
 }
@@ -174,7 +185,8 @@ main> section{
 @media screen and (max-width:576px) {
     .navbar,
     .nav-items, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .facts-container{
@@ -193,6 +205,13 @@ main> section{
         justify-items: center;
         gap: 40px;
     }
+    .section-img{
+        width: 100%;
+    }
+    #experience-badge{
+        margin-top: .8rem;
+        margin-left: .1rem;
+    }
     /* has given this code in module becoz of .team-feature-container vulbosoto margin-left:130px disilo(deyar chilo 80px)----tai eta extra kora lagse ,ami tkn kheyal korechilam tai amar lageni ----comment kore rakcki*/
     /* .team-feature-container{
         margin-left: 20px;
@@ -200,7 +219,8 @@ main> section{
 }
 /* for medium size device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .team-feature-container{
@@ -210,6 +230,10 @@ main> section{
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         justify-items: center;
+    }
+    #experience-badge{
+        margin-top: .8rem;
+        margin-left: .1rem;
     }
 }
 
