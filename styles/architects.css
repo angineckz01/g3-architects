@@ -29,6 +29,7 @@
 .section-description{
     font-size: 1rem;
     font-weight: 400;
+    color: #727272;
 }
 /* primary bg */
 .primary-bg{
@@ -134,15 +135,41 @@ main> section{
 .fact-description{
     max-width: 540px;
 }
-/* responsive media query */
+/* our sponchor sections starts here */
+.sponchor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponchors-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponchors-container img{
+    filter: grayscale(100%);
+}
+/* responsive media query for small devices*/
 @media screen and (max-width:576px) {
     .navbar,
     .nav-items, 
     .teams{
         flex-direction: column;
     }
-    .teams-img-container{
-        grid-template-columns: repeat(1,1fr);
+    .facts-container{
+        justify-items: center;
+    }
+    .teams-img-container, 
+    .facts-container,
+    .sponchors-container {
+        grid-template-columns: 1fr;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponchors-container{
+        justify-items: center;
+        gap: 40px;
     }
     /* has given this code in module becoz of .team-feature-container vulbosoto margin-left:130px disilo(deyar chilo 80px)----tai eta extra kora lagse ,ami tkn kheyal korechilam tai amar lageni ----comment kore rakcki*/
     /* .team-feature-container{
@@ -156,6 +183,11 @@ main> section{
     }
     .team-feature-container{
         margin: 50px auto;
+    }
+    .facts-container, .sponchors-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        justify-items: center;
     }
 }
 
